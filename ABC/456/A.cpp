@@ -4,22 +4,14 @@
 using namespace std;
 using ll = long long;
 
-int ma[13][32];
-
 void solve() {
-  int d, m;
-  cin >> m >> d;
+  int c;
+  cin >> c;
 
-  ma[1][7] = 1;
-  ma[3][3] = 1;
-  ma[5][5] = 1;
-  ma[7][7] = 1;
-  ma[9][9] = 1;
-
-  if (ma[m][d] > 0)
-    cout << "Yes";
+  if (c >= 3 && c <= 18)
+    cout << "Yes" << "\n";
   else
-    cout << "No";
+    cout << "No" << "\n";
 }
 
 int main() {
