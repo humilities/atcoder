@@ -5,10 +5,11 @@ using namespace std;
 using ll = long long;
 
 void solve() {
-  int n, k;
+  int n;
+  ll k;
   cin >> n >> k;
 
-  vector<int> a(n);
+  vector<ll> a(n);
   lin(i, 0, n) cin >> a[i];
 }
 
@@ -16,11 +17,11 @@ int main() {
   ios_base::sync_with_stdio(false);
   cin.tie(NULL);
 
-  int t;
-  cin >> t;
-
-  while (t--)
-    solve();
+  // int t;
+  // cin >> t;
+  //
+  // while (t--)
+  solve();
 
   return 0;
 }

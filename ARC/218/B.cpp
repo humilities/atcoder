@@ -5,11 +5,18 @@ using namespace std;
 using ll = long long;
 
 void solve() {
-  int n, k;
-  cin >> n >> k;
+  int n;
+  cin >> n;
+
+  int mn = 2e9;
 
   vector<int> a(n);
-  lin(i, 0, n) cin >> a[i];
+  lin(i, 0, n) cin >> a[i], mn = max(mn, a[i]);
+
+  if (mn & 1)
+    cout << "Bob" << "\n";
+  else
+    cout << "Alice" << "\n";
 }
 
 int main() {

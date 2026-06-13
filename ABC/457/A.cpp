@@ -5,22 +5,26 @@ using namespace std;
 using ll = long long;
 
 void solve() {
-  int n, k;
-  cin >> n >> k;
+  int n;
+  cin >> n;
 
   vector<int> a(n);
   lin(i, 0, n) cin >> a[i];
+  int x;
+  cin >> x;
+
+  cout << a[x - 1] << "\n";
 }
 
 int main() {
   ios_base::sync_with_stdio(false);
   cin.tie(NULL);
 
-  int t;
-  cin >> t;
-
-  while (t--)
-    solve();
+  // int t;
+  // cin >> t;
+  //
+  // while (t--)
+  solve();
 
   return 0;
 }
